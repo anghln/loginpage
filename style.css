@@ -1,0 +1,86 @@
+body {
+    --primary: 237, 73, 86;
+    --color: 44, 62, 80;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.con-login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 40px;
+    padding: 35px;
+    max-width: 400px;
+    background-color: #f1f3f6;
+    position: relative;
+}
+
+.con-login h1 {
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.con-login .con-inputs {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.con-login .con-inputs .con-forgot {
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+
+.con-login .con-inputs .con-forgot a {
+    text-decoration: none;
+    color: rgb(var(--color));
+    font-size: .9rem;
+}
+
+.con-input {
+    margin-top: 10px;
+}
+
+.con-input input {
+    width: 90%;
+    padding: 14px 20px;
+    border: 0px;
+    background: #f1f3f6;
+    border-radius: 18px;
+    border: 2px solid rgb(var(--color));
+    transition: all .25s ease;
+    opacity: .2;
+}
+
+.con-input input:focus {
+    opacity: 1;
+}
+
+.con-input label {
+    display: block;
+    padding-left: 8px;
+}
+
+.con-login footer {
+    width: 100%;
+}
+
+.btn-login {
+    background: rgb(var(--primary));
+    color: #fff;
+    border: 0px;
+    padding: 14px 20px;
+    border-radius: 18px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all .25s ease;
+}
+
+.btn-login:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0px 10px 30px 0px rgba(var(--primary), .4);
+}
